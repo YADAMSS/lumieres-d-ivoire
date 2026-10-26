@@ -112,6 +112,15 @@ section.band{padding-block:clamp(64px,9vw,108px);border-bottom:1px solid var(--r
 .making figcaption span{font-size:.9rem;color:var(--stone-dim)}
 .making .k{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
 
+
+/* Vidéo atelier */
+.film{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:40px;align-items:center;margin-top:56px}
+@media (max-width:700px){.film{grid-template-columns:1fr;gap:20px}}
+.film video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:10px;border:1px solid var(--rule);background:var(--night-2);display:block}
+.film .txt{display:grid;gap:12px;max-width:46ch}
+.film h3{font-size:clamp(1.5rem,3vw,2rem)}
+.film p{color:var(--stone-dim)}
+
 /* Process */
 .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px;counter-reset:s}
 @media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
@@ -267,7 +276,7 @@ footer .fb svg{width:18px;height:18px;fill:var(--gold)}
           <p>« Je suis le pain de vie » : le Christ, le calice, le blé et la vigne pour un chœur ou une chapelle.</p>
         </article>
         <article class="bay">
-          <div class="arch"><img style="object-position:50% 40%" src="img/visage-hd.webp" alt="Vitrail contemporain d'un profil de femme africaine aux verres jaunes, rouges et bleus" loading="lazy" width="600" height="600"></div>
+          <div class="arch"><img style="object-position:50% 58%" src="img/visage-hd.webp" alt="Vitrail contemporain d'un profil de femme africaine aux verres jaunes, rouges et bleus" loading="lazy" width="600" height="600"></div>
           <p class="n">Réalisation</p>
           <h3>Contemporain</h3>
           <p>Un profil de femme en verres texturés pour une maison. Le vitrail entre aussi dans les intérieurs d'aujourd'hui.</p>
@@ -287,6 +296,14 @@ footer .fb svg{width:18px;height:18px;fill:var(--gold)}
         <figure><img src="img/carton.webp" alt="Carton à l'échelle 1 d'un vitrail représentant un profil de femme" loading="lazy" width="600" height="600"><figcaption><span class="k">Le carton</span><b>Dessin à l'échelle 1</b><span>Chaque ligne deviendra un joint de plomb ou de cuivre.</span></figcaption></figure>
         <figure><img src="img/sertissage.webp" alt="Pièces de verre colorées assemblées sur le carton, bordées de ruban de cuivre" loading="lazy" width="600" height="600"><figcaption><span class="k">La coupe</span><b>Verres taillés et sertis</b><span>Les pièces sont coupées une à une, ajustées puis bordées.</span></figcaption></figure>
         <figure><img style="object-position:50% 45%" src="img/visage-hd.webp" alt="Le vitrail du profil de femme terminé, dans son cadre, traversé par la lumière" loading="lazy" width="600" height="600"><figcaption><span class="k">La lumière</span><b>Le vitrail terminé</b><span>Une fois soudé et posé, la lumière révèle les couleurs.</span></figcaption></figure>
+      </div>
+      <div class="film">
+        <video src="img/atelier-soudure.mp4" poster="img/atelier-soudure.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Vidéo du vitrail du profil de femme soudé sur la table de l'atelier"></video>
+        <div class="txt">
+          <p class="eyebrow">En vidéo</p>
+          <h3>Le vitrail soudé, sur la table de l'atelier.</h3>
+          <p>Toutes les pièces sont assemblées et soudées. Au mur, les maquettes en couleur qui ont servi de guide. Il ne reste plus qu'à encadrer le vitrail et à le poser.</p>
+        </div>
       </div>
     </div>
   </section>
